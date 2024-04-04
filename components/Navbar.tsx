@@ -10,11 +10,11 @@ import {
 
 export default function NavBar() {
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar shouldHideOnScroll className="p-2">
       <NavbarBrand>
-        <p className="font-bold text-inherit">xTracker</p>
+        <p className="font-bold text-inherit">Metrobus xTracker</p>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
@@ -30,14 +30,11 @@ export default function NavBar() {
             Integrations
           </Link>
         </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+            Dashboard
           </Button>
         </NavbarItem>
       </NavbarContent>
