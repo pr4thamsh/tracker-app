@@ -39,3 +39,8 @@ export type BusRoute = {
   shortstatus: string;
   requestip: string;
 };
+
+export type BusRouteParent = {
+  routenumber: number;
+  routes: BusRoute[];
+};
